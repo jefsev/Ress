@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "5220cc767c507e14076ea9ace630cb85",
+    "packages": [
+        {
+            "name": "boxybird/inertia-wordpress",
+            "version": "v0.5.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/boxybird/inertia-wordpress.git",
+                "reference": "10979f286a257046f3809de01ca8897be260d921"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/boxybird/inertia-wordpress/zipball/10979f286a257046f3809de01ca8897be260d921",
+                "reference": "10979f286a257046f3809de01ca8897be260d921",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "BoxyBird\\Inertia\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Rhyand",
+                    "email": "hello@andrewrhyand.com"
+                }
+            ],
+            "description": "The WordPress adapter for Inertia.js",
+            "keywords": [
+                "inertia.js",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/boxybird/inertia-wordpress/issues",
+                "source": "https://github.com/boxybird/inertia-wordpress/tree/v0.5.6"
+            },
+            "time": "2022-02-12T19:49:49+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^7.4|^8.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

@@ -1,0 +1,21 @@
+{
+    "name": "nomix/nomix",
+    "type": "wordpress-theme",
+    "description": "WordPress React starter theme with inertia",
+    "keywords": [
+        "wordpress",
+        "react"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeffrey Sevinga",
+            "email": "sevinga@protonmail.com",
+            "homepage": "https://github.com/swalkinshaw"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "boxybird/inertia-wordpress": "^0.5.6"
+    }
+}
