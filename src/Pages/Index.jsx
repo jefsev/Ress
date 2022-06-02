@@ -3,10 +3,12 @@ import Header from '../Components/Shared/Header'
 import Footer from '../Components/Shared/Footer'
 
 const Index = (props) => {
+    console.log(props)
+
     return (
         <div>
             <Header />
-            <h1>{props.page.post_title} Dadasd</h1>
+            <h1>{props.page.post_title}</h1>
             <div dangerouslySetInnerHTML={{ __html: props.page.post_content }} ></div>
             <Footer />
         </div>

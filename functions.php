@@ -1,6 +1,7 @@
 <?php
 
 use BoxyBird\Inertia\Inertia;
+use Nomix\Inc\Collecter;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -28,9 +29,6 @@ add_action('after_setup_theme', function () {
 
     Inertia::version($version);
 });
-
-// Wordpress navigation Inertia support
-
 
 /**
  * Register the initial theme setup.
@@ -97,3 +95,11 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('customize-selective-refresh-widgets');
 }, 20);
+
+
+// Register theme files from /app
+return Collecter::collectFiles([
+    'routes/head',
+    'routes/auth',
+    'routes/nav',
+]);
