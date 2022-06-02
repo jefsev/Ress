@@ -4,6 +4,7 @@ import Footer from '../Components/Shared/Footer'
 
 const Page = (props) => {
     console.log(props)
+
     return (
         <div>
             <Header />

@@ -17,5 +17,10 @@
     "require": {
         "php": "^7.4|^8.0",
         "boxybird/inertia-wordpress": "^0.5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nomix\\": "app/"
+        }
     }
 }
