@@ -6,7 +6,7 @@ const Index = (props) => {
 
     return (
         <div>
-            <Header data={props.primary_menu} />
+            <Header data={props} />
             <h1>{props.page.post_title}</h1>
             <div dangerouslySetInnerHTML={{ __html: props.page.post_content }} ></div>
             <Footer />
