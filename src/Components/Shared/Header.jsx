@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from '@inertiajs/inertia-react';
 
-const Header = () => {
+const Header = (props) => {
+    console.log(props)
+
     return (
         <header className='nav'>
-            <Link href="/">Home</Link>
-            <Link href="/sample-page/">Sample page</Link>
+            {props.data.map((link, index) =>
+                <Link href={link.link} key={index}>{link.name}</Link>
+            )}
         </header>
     )
 }

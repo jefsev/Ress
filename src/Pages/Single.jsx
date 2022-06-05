@@ -6,7 +6,7 @@ const Single = (props) => {
     console.log(props)
     return (
         <div>
-            <Header />
+            <Header data={props.primary_menu} />
             <h1>{props.post.post_title}</h1>
             <div dangerouslySetInnerHTML={{ __html: props.post.post_content }} ></div>
             <Footer />
