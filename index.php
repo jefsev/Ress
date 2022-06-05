@@ -21,7 +21,7 @@ if (!is_front_page() && is_page()) {
 }
 
 if (is_404()) {
-    return Inertia::render('404', [
+    return Inertia::render('Page404', [
         'content' => '404 - Not Found',
     ]);
 }
