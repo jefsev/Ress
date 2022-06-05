@@ -9,19 +9,23 @@ Build with [Inertia.js](https://inertiajs.com) and [server-side adapter for Word
 composer install<br />
 npm install<br />
 
-## Build
+## Build & Watch
 
-"watch": npm run watch
-"build": npm build
+npm run watch<br />
+npm build<br />
 
 ## ToDo 
 
 - [x] Drink coffee
 - [x] add/fix laravel mix and scss (moved to webpack instead of mix)
-- [] Check webpack build for asset files like png, svg, fonts etc.
-- [] Move index.php logic to app/Controllers
-- [] Add support for [ACF Builder](https://github.com/StoutLogic/acf-builder)
-- [] Add Authentication support for front-end login / register
-- [] Clean-up package.json
-- [] Create webpack.dev and webpack.prod
-- [] Testing, testing
+- [x] add wp navigation / add this to react Header component
+- [x] add wp custom logo / add this to react Header component
+-[] Check webpack build for asset files like png, svg, fonts etc.
+-[] Add footer with wordpress widget support
+-[] Move index.php logic to app/Controllers
+-[] Add support for [Yoast](https://yoast.com/wordpress/plugins/seo/)
+-[] Add support for [ACF Builder](https://github.com/StoutLogic/acf-builder)
+-[] Clean-up package.json
+-[] Create webpack.dev and webpack.prod
+-[] Add Authentication support for front-end login / register
+-[] Testing, testing
