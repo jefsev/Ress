@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Get custom logo url.
  */
