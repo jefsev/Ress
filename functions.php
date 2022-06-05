@@ -75,6 +75,12 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('responsive-embeds');
 
+     /**
+     * Enable custom logo in customizer.
+     * @link https://developer.wordpress.org/themes/functionality/custom-logo/
+     */
+    add_theme_support( 'custom-logo' );
+
     /**
      * Enable HTML5 markup support.
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#html5
@@ -94,7 +100,14 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
      */
     add_theme_support('customize-selective-refresh-widgets');
+
 }, 20);
+
+// Removing additional CSS from the customizer
+add_action ('customize_register', function($wp_customize) {
+    $wp_customize-> remove_section ('custom_css'); // whole section out
+});
+   
 
 
 // Register theme files from /app
