@@ -20,12 +20,12 @@ npm build<br />
 - [x] add/fix laravel mix and scss (moved to webpack instead of mix)
 - [x] add wp navigation / add this to react Header component
 - [x] add wp custom logo / add this to react Header component
--[] Check webpack build for asset files like png, svg, fonts etc.
--[] Add footer with wordpress widget support
--[] Move index.php logic to app/Controllers
--[] Add support for [Yoast](https://yoast.com/wordpress/plugins/seo/)
--[] Add support for [ACF Builder](https://github.com/StoutLogic/acf-builder)
--[] Clean-up package.json
--[] Create webpack.dev and webpack.prod
--[] Add Authentication support for front-end login / register
--[] Testing, testing
+- [ ] Check webpack build for asset files like png, svg, fonts etc.
+- [ ] Add footer with wordpress widget support
+- [ ] Move index.php logic to app/Controllers
+- [ ] Add support for [Yoast](https://yoast.com/wordpress/plugins/seo/)
+- [ ] Add support for [ACF Builder](https://github.com/StoutLogic/acf-builder)
+- [ ] Clean-up package.json
+- [ ] Create webpack.dev and webpack.prod
+- [ ] Add Authentication support for front-end login / register
+- [ ] Testing, testing
