@@ -5,7 +5,7 @@ import Footer from '../Components/Shared/Footer'
 const Page404 = (props) => {
 
     return (
-        <div>
+        <div className='container mx-auto px-2'>
             <Header data={props.primary_menu} />
             <h1>{props.content}</h1>
             <Footer />
