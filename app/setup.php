@@ -26,6 +26,10 @@ add_action('wp_enqueue_scripts', function () {
     }
 });
 
+// Remove Emoji.
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 // Share globally with Inertia views
 add_action('after_setup_theme', function () {
     Inertia::share([
