@@ -14,7 +14,21 @@ add_action('wp_enqueue_scripts', function () {
 
     wp_enqueue_style('nomix/css', get_stylesheet_directory_uri() .'/dist/css/app.css', [], $version, false, null);
     wp_enqueue_script('nomix/react', get_stylesheet_directory_uri() . '/dist/main.js', [], $version, true);
+
+    // Remove unwanted scripts.
+    wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style( 'wc-blocks-style' ); // Remove WooCommerce block CSS
+
+    if (!is_admin_bar_showing() && !is_customize_preview()) {
+        wp_dequeue_style('dashicons');
+        wp_deregister_style('dashicons');
+    }
 });
+
+// Remove Emoji.
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 // Share globally with Inertia views
 add_action('after_setup_theme', function () {
