@@ -1,18 +1,16 @@
 import React from 'react'
 import { Link } from '@inertiajs/inertia-react';
-import defaultLogo from '../../assets/images/nomix-logo.svg';
+import defaultLogo from '../../assets/images/logo.svg';
 
 const Header = (props) => {
-    const nav = props.data.primary_menu;
-    //const logo = props.data.custom_logo;
-
+    console.log(props)
     return (
-        <header className='nav flex flex-row justify-between py-3'>
+        <header className='nav flex flex-row justify-between items-center py-3'>
             <Link href='/'>
-                <img src={defaultLogo} alt='site logo' className="logo" />
+                <img src={props.logo != null && props.logo || defaultLogo} alt='site logo' className="logo" />
             </Link>
-            <nav className='nav__menu'>
-                {nav.map((link, index) =>
+            <nav className='nav-menu'>
+                {props.nav.map((link, index) =>
                     <Link href={link.link} key={index}>{link.name}</Link>
                 )}
             </nav>
