@@ -14,6 +14,16 @@ add_action('wp_enqueue_scripts', function () {
 
     wp_enqueue_style('nomix/css', get_stylesheet_directory_uri() .'/dist/css/app.css', [], $version, false, null);
     wp_enqueue_script('nomix/react', get_stylesheet_directory_uri() . '/dist/main.js', [], $version, true);
+
+    // Remove unwanted scripts.
+    wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style( 'wc-blocks-style' ); // Remove WooCommerce block CSS
+
+    if (!is_admin_bar_showing() && !is_customize_preview()) {
+        wp_dequeue_style('dashicons');
+        wp_deregister_style('dashicons');
+    }
 });
 
 // Share globally with Inertia views
