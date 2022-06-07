@@ -3,10 +3,9 @@ import Header from '../Components/Shared/Header'
 import Footer from '../Components/Shared/Footer'
 
 const Single = (props) => {
-    console.log(props)
     return (
-        <div>
-            <Header data={props.primary_menu} />
+        <div className='container mx-auto px-2'>
+            <Header nav={props.primary_menu} logo={props.custom_logo} />
             <h1>{props.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: props.content }} ></div>
             <Footer />

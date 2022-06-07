@@ -3,11 +3,10 @@ import Header from '../Components/Shared/Header'
 import Footer from '../Components/Shared/Footer'
 
 const Archive = (props) => {
-    console.log(props)
 
     return (
-        <div>
-            <Header data={props} />
+        <div className='container mx-auto px-2'>
+            <Header nav={props.primary_menu} logo={props.custom_logo} />
             <h1>{props.title}</h1>
             <Footer />
         </div>

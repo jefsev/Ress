@@ -1,0 +1,19 @@
+.nav {
+    .logo {
+        width: 85px;
+        height: auto;
+    }
+
+    .nav-menu {
+        a {
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
