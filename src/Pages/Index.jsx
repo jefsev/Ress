@@ -4,10 +4,9 @@ import Header from '../Components/Shared/Header'
 import Footer from '../Components/Shared/Footer'
 
 const Index = (props) => {
-    console.log(props)
     return (
         <div className='container mx-auto px-2'>
-            <Header nav={props.primary_menu} logo={props.custom_logo} />
+            <Header nav={props.primary_menu} logo={props.custom_logo} seo={props.yoast_meta} />
             <h1>{props.title}</h1>
             <div className='content' dangerouslySetInnerHTML={{ __html: props.content }} ></div>
             <div className="post-loop py-3">
