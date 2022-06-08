@@ -4,7 +4,7 @@ import Header from '../Components/Shared/Header'
 import Footer from '../Components/Shared/Footer'
 
 const Index = (props) => {
-
+    console.log(props)
     return (
         <div className='container mx-auto px-2'>
             <Header nav={props.primary_menu} logo={props.custom_logo} />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from '@inertiajs/inertia-react';
-import defaultLogo from '../../assets/images/logo.svg';
+import defaultLogo from '../../assets/images/logo-nm.svg';
 
 const Header = (props) => {
     console.log(props)

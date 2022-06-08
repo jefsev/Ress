@@ -1,8 +1,12 @@
 <?php
 /**
- * Get custom logo url.
- */
+ * Need some helper functions? 
+ * Put theme inside here this wil be included in functions.php
+ *
+ * @Nomix
+*/
 
+// Get custom logo url.
 function get_custom_logo_url()
 {
     $custom_logo_id = get_theme_mod( 'custom_logo' );
