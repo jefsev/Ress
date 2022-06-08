@@ -124,3 +124,13 @@ add_action('after_setup_theme', function () {
 add_action ('customize_register', function($wp_customize) {
     $wp_customize-> remove_section ('custom_css'); // whole section out
 });
+
+// Remove multiple Yoast meta tags
+if(class_exists('WPSEO_Options'))
+{
+    add_filter( 'wpseo_title', '__return_false' );
+    add_filter( 'wpseo_metadesc', '__return_false' );
+    add_filter( 'wpseo_robots', '__return_false' );
+}
+
+remove_action('wp_head', 'wp_generator');

@@ -2,16 +2,11 @@
 use BoxyBird\Inertia\Inertia;
 
 add_action('init', function () {
-    // Synchronously using key/value
-    Inertia::share('site_name', get_bloginfo('name'));
-
-
-    // Multiple values
-    Inertia::share([
-        // Synchronously
-        'site' => [
-            'name'       => get_bloginfo('name'),
-            'description'=> get_bloginfo('description'),
-        ],
-    ]);
+        Inertia::share([
+            // Synchronously
+            'wordpress_seo' => [
+                'wp_site_name'       => get_bloginfo('name'),
+                'wp_seo_description' => get_bloginfo('description'),
+            ],
+        ]);
 });
