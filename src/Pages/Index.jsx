@@ -5,6 +5,7 @@ import Footer from '../Components/Shared/Footer'
 
 const Index = (props) => {
     return (
+
         <div className='container mx-auto px-2'>
             <Header nav={props.primary_menu} logo={props.custom_logo} seo={props.yoast_meta} />
             <h1>{props.title}</h1>

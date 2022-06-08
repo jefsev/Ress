@@ -1,27 +1,26 @@
 import React from 'react';
-import { Helmet } from "react-helmet";
-import { Link } from '@inertiajs/inertia-react';
+import { Link, Head } from '@inertiajs/inertia-react';
 import defaultLogo from '../../assets/images/logo-nm.svg';
 
 const Header = (props) => {
     console.log(props.seo)
     return (
         <>
-            <Helmet>
-                {(props.seo.yoast_status === false) &&
-                    <>
-                        <title>{props.title}</title>
-                    </>
-                }
 
-                {(props.seo.yoast_status === true) &&
-                    <>
-                        <meta name="robots" content={props.seo.robots.index + ',' + props.seo.robots.follow}></meta>
-                        <title>{props.seo.seo_title}</title>
-                        <meta name="description" content={props.seo.seo_description} />
-                    </>
-                }
-            </Helmet>
+            {(props.seo.yoast_status === false) &&
+                <Head>
+                    <title>{props.title}</title>
+                </Head>
+            }
+
+            {(props.seo.yoast_status === true) &&
+                <Head>
+                    <meta name="robots" content={props.seo.robots.index + ',' + props.seo.robots.follow}></meta>
+                    <title>{props.seo.seo_title}</title>
+                    <meta name="description" content={props.seo.seo_description} />
+                </Head>
+            }
+
 
             <header className='nav flex flex-row justify-between items-center py-3'>
                 <Link href='/'>
