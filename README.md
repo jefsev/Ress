@@ -24,7 +24,7 @@ npm build<br />
 - [ ] Check webpack build for asset files like png, svg, fonts etc.
 - [ ] Add footer
 - [ ] Add support for [Yoast](https://yoast.com/wordpress/plugins/seo/)
-- [ ] Add support for [ACF Builder](https://github.com/StoutLogic/acf-builder)
+- [ ] Render all meta tag values in controllers use collectYoastMeta class, then remove them from php head
 - [ ] Clean-up package.json
 - [ ] Create webpack.dev and webpack.prod
 - [ ] Add Authentication support for front-end login / register

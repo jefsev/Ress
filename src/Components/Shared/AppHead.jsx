@@ -8,7 +8,6 @@ const AppHead = ({ seo, pageTitle }) => {
             {(seo.yoast_status === false) &&
                 <Head>
                     <title>{pageTitle}</title>
-                    <meta name="description" content={seo.seo_description} />
                 </Head>
             }
 

@@ -125,12 +125,17 @@ add_action ('customize_register', function($wp_customize) {
     $wp_customize-> remove_section ('custom_css'); // whole section out
 });
 
-// Remove multiple Yoast meta tags
-if(class_exists('WPSEO_Options'))
-{
-    add_filter( 'wpseo_title', '__return_false' );
-    add_filter( 'wpseo_metadesc', '__return_false' );
-    add_filter( 'wpseo_robots', '__return_false' );
-}
+/**
+ * Removes all meta data from the presenters, we want to load them with Inertia <Head />.
+ * We will use the collectYoastMeta::collectMeta() function to get the meta data.
+ * 
+ * @param array $presenters The registered presenters.
+ *
+ * @return array return $presenters empty, we will get them using intertia.
+ */
 
-remove_action('wp_head', 'wp_generator');
+add_action( 'wpseo_frontend_presenters',function( $presenters ) {
+    $presenters = [];
+
+    return $presenters;
+} );
