@@ -12,6 +12,7 @@ class collectYoastMeta {
         $yoast_seo = [];
         if(class_exists('WPSEO_Options')){
             /* Yoast is active */
+            $yoast_seo['data']            = YoastSEO()->meta->for_post( $id )->schema;
             $yoast_seo['yoast_status']    = true;
             $yoast_seo['post_id']         = $id;
             $yoast_seo['robots']          = YoastSEO()->meta->for_post( $id )->robots;

@@ -1,26 +1,14 @@
 import React from 'react'
 import { Link } from '@inertiajs/inertia-react';
+import AppHead from '../Components/Shared/AppHead';
 import Header from '../Components/Shared/Header'
 import Footer from '../Components/Shared/Footer'
 
 const Index = (props) => {
-    console.log(props)
+
     return (
-
         <>
-            {(props.yoast_status === false) &&
-                <Head>
-                    <title>{props.title}</title>
-                </Head>
-            }
-
-            {(props.yoast_status === true) &&
-                <Head>
-                    <meta name="robots" content={props.robots.index + ',' + props.robots.follow}></meta>
-                    <title>{props.seo_title}</title>
-                    <meta name="description" content={props.seo_description} />
-                </Head>
-            }
+            <AppHead seo={props.yoast_meta} pageTitle={props.title} />
 
             <div className='container mx-auto px-2'>
                 <Header />
