@@ -10,7 +10,7 @@ namespace Nomix\Inc;
  * @return array return $yoast_seo to controller to render with Inertia.
 */
 
-class collectYoastMeta {
+class CollectYoastMeta {
     public static function collectMeta( $id ) {
         // Setup array
         $yoast_seo = [];
