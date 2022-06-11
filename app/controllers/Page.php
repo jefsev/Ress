@@ -1,8 +1,8 @@
 <?php
-namespace Nomix\Controllers;
+namespace Ress\Controllers;
 
 use BoxyBird\Inertia\Inertia;
-use Nomix\Inc\CollectYoastMeta;
+use Ress\Inc\CollectYoastMeta;
 
 class Page {
     public static function index() {

@@ -5,15 +5,15 @@ use BoxyBird\Inertia\Inertia;
 /**
  * Setup everything we need for the theme.
  *
- * @Nomix
+ * @Ress
  */
 
 // Enqueue scripts.
 add_action('wp_enqueue_scripts', function () {
     $version = md5_file(get_stylesheet_directory() . '/dist/manifest.json');
 
-    wp_enqueue_style('nomix/css', get_stylesheet_directory_uri() .'/dist/css/app.css', [], $version, false, null);
-    wp_enqueue_script('nomix/react', get_stylesheet_directory_uri() . '/dist/main.js', [], $version, true);
+    wp_enqueue_style('ress/css', get_stylesheet_directory_uri() .'/dist/css/app.css', [], $version, false, null);
+    wp_enqueue_script('ress/react', get_stylesheet_directory_uri() . '/dist/main.js', [], $version, true);
 
     // Remove unwanted scripts.
     wp_dequeue_style( 'wp-block-library' );
@@ -65,7 +65,7 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'nomix'),
+        'primary_navigation' => __('Primary Navigation', 'ress'),
     ]);
 
     /**

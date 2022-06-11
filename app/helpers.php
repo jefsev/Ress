@@ -3,7 +3,7 @@
  * Need some helper functions? 
  * Put theme inside here this wil be included in functions.php
  *
- * @Nomix
+ * @Ress
 */
 
 // Get custom logo url.

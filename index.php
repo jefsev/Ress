@@ -1,6 +1,6 @@
 <?php
 
-use Nomix\Inc\Collecter;
+use Ress\Inc\Collecter;
 
 // Register theme files from /app
 return Collecter::collectFiles([

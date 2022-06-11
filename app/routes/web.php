@@ -1,10 +1,10 @@
 <?php 
 
-use Nomix\Inc\Collecter;
-use Nomix\Controllers\FrontPage;
-use Nomix\Controllers\Single;
-use Nomix\Controllers\Page;
-use Nomix\Controllers\Archive;
+use Ress\Inc\Collecter;
+use Ress\Controllers\FrontPage;
+use Ress\Controllers\Single;
+use Ress\Controllers\Page;
+use Ress\Controllers\Archive;
 use BoxyBird\Inertia\Inertia;
 
 if (is_front_page()) {

@@ -27,6 +27,7 @@ v1.0.0
 - [x] Check webpack build for asset files like png, svg, fonts etc.
 - [ ] Add footer
 - [ ] Build a simple theme website to showcase theme and test theme performance
+- [ ] Need a cool theme logo :D
 - [ ] Clean-up package.json
 - [ ] Create webpack.dev and webpack.prod
 
