@@ -1,6 +1,6 @@
 <?php
 
-use Nomix\Inc\Collecter;
+use Ress\Inc\Collecter;
 
 require_once __DIR__ . '/vendor/autoload.php';
 

@@ -1,5 +1,5 @@
 <?php
-namespace Nomix\Inc;
+namespace Ress\Inc;
 
 /**
  * We need Yoast SEO meta data in our React theme
