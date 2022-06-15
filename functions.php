@@ -1,8 +1,7 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 
 use Ress\Inc\Collecter;
-
-require_once __DIR__ . '/vendor/autoload.php';
 
 // Register theme files from /app
 return Collecter::collectFiles([

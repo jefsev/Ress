@@ -1,5 +1,5 @@
 {
-    "name": "nomix/nomix",
+    "name": "ress/ress",
     "type": "wordpress-theme",
     "description": "WordPress React starter theme with inertia",
     "keywords": [
@@ -11,11 +11,11 @@
         {
             "name": "Jeffrey Sevinga",
             "email": "sevinga@protonmail.com",
-            "homepage": "https://github.com/swalkinshaw"
+            "homepage": "https://github.com/jefsev/Ress"
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
+        "php": ">=7.4",
         "boxybird/inertia-wordpress": "^0.5.6"
     },
     "autoload": {
