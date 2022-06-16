@@ -16,7 +16,7 @@ npm build<br />
 
 ## ToDo 
 
-v1.0.0
+v0.1.0
 - [x] Drink coffee
 - [x] add/fix laravel mix and scss (moved to webpack instead of mix)
 - [x] add wp navigation / add this to react Header component
@@ -25,12 +25,12 @@ v1.0.0
 - [x] Add support for [Yoast](https://yoast.com/wordpress/plugins/seo/)
 - [x] Render all meta tag values in controllers use collectYoastMeta class, then remove them from php head
 - [x] Check webpack build for asset files like png, svg, fonts etc.
+- [x] Build a simple theme website to showcase theme and test theme performance
+- [x] Need a cool theme logo :D
 - [ ] Add footer
-- [ ] Build a simple theme website to showcase theme and test theme performance
-- [ ] Need a cool theme logo :D
 - [ ] Clean-up package.json
 - [ ] Create webpack.dev and webpack.prod
 
-v1.2.0
+v0.2.0
 - [ ] Add Authentication support for front-end login / register
 - [ ] Testing, testing
