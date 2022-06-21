@@ -1,4 +1,5 @@
 .nav {
+    background: #030300;
     .logo {
         width: 126px;
         height: auto;
@@ -7,9 +8,10 @@
     .nav-menu {
         a {
             font-size: 16px;
-            font-weight: 700;
+            font-weight: 400;
             text-decoration: none;
             transition: .2s ease-in-out;
+            color: #fff;
 
             &:hover {
                 text-decoration: underline;
