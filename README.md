@@ -29,7 +29,7 @@ v0.1.0
 - [x] Need a cool theme logo :D
 - [ ] Add footer
 - [ ] Clean-up package.json
-- [ ] Create webpack.dev and webpack.prod
+- [ ] Create better webpack [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/) / [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
 
 v0.2.0
 - [ ] Add Authentication support for front-end login / register
