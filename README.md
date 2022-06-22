@@ -27,9 +27,9 @@ v0.1.0
 - [x] Check webpack build for asset files like png, svg, fonts etc.
 - [x] Build a simple theme website to showcase theme and test theme performance
 - [x] Need a cool theme logo :D
+- [x] Create better webpack [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)html-webpack-plugin)
+- [x] Clean-up package.json
 - [ ] Add footer
-- [ ] Clean-up package.json
-- [ ] Create better webpack [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/) / [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
 
 v0.2.0
 - [ ] Add Authentication support for front-end login / register
