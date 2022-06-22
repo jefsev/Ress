@@ -25,7 +25,6 @@ module.exports = {
                     extensions: [".js", ".jsx"]
                 },
                 include: path.resolve(__dirname, 'src'),
-                exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -39,7 +38,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(s[ac]ss|css)$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
                     {
@@ -61,6 +60,11 @@ module.exports = {
             {
                 test: /\.(svg|png|jpe?g|gif)$/i,
                 type: 'asset/resource',
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
             },
         ],
     },
