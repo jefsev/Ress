@@ -1,6 +1,7 @@
 <?php
 
 use BoxyBird\Inertia\Inertia;
+use StoutLogic\AcfBuilder\FieldsBuilder;
 
 /**
  * Setup everything we need for the theme.
@@ -92,7 +93,7 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('responsive-embeds');
 
-     /**
+    /**
      * Enable custom logo in customizer.
      * @link https://developer.wordpress.org/themes/functionality/custom-logo/
      */
@@ -139,3 +140,30 @@ add_action( 'wpseo_frontend_presenters',function( $presenters ) {
 
     return $presenters;
 } );
+
+/**
+ * Initialize ACF Builder
+ */
+
+add_action('after_setup_theme', function () {
+
+    // Checks if advanced custom fields plugin is installed
+    if (class_exists('ACF')) {
+        // Get all fields from the fields folder
+        $field_file_names = glob(get_template_directory().'/app/fields/*.php');
+        $all_fields = [];
+    
+        // Loop through all fields and add field to array
+        foreach ($field_file_names as $file_name) {
+            array_push($all_fields, require_once $file_name);
+        }
+    
+        // Create fields from returned files
+        foreach ($all_fields as $field) {
+            if ($field instanceof FieldsBuilder) {
+                acf_add_local_field_group($field->build());
+            }
+        }
+    }
+
+});
