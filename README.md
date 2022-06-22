@@ -33,4 +33,5 @@ v0.1.0
 
 v0.2.0
 - [ ] Add Authentication support for front-end login / register
+- [ ] [Code splitting](https://webpack.js.org/guides/code-splitting/)
 - [ ] Testing, testing
