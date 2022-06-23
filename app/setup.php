@@ -139,3 +139,25 @@ add_action( 'wpseo_frontend_presenters',function( $presenters ) {
 
     return $presenters;
 } );
+
+
+/**
+ * If ACF is installed
+ * Initialize ACF Builder
+ * Get acf fields from controllers
+ */
+if( class_exists('ACF') ) {
+    add_action('init', function () {
+        //$front_page = new FrontPage();
+        //$front_page_acf = $front_page->acf_fields();
+        $fields = [];
+    
+        if (!empty($fields)) {
+            array_push($fields, $front_page_acf);
+        
+            array_walk($fields, function($field) {
+                acf_add_local_field_group($field->build());
+            });
+        }
+    });
+}
