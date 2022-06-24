@@ -16,7 +16,8 @@
     ],
     "require": {
         "php": ">=7.4",
-        "boxybird/inertia-wordpress": "^0.5.6"
+        "boxybird/inertia-wordpress": "^0.5.6",
+        "stoutlogic/acf-builder": "^1.12"
     },
     "autoload": {
         "psr-4": {
