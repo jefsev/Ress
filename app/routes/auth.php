@@ -30,14 +30,13 @@ add_action('init', function () {
                 ];
             }
         },
-        'login_form' => function () {
+        'auth_forms' => function () {
             if (!is_user_logged_in()) {
-                ob_start();
-                    wp_login_form();
-                    $output = ob_get_contents(); 
-                ob_end_clean(); 
+                $login_form = wp_login_form([
+                    'echo' => false,
+                ])
                 return [
-                    'user' => $output
+                    'login_form' => $login_form
                 ];
             }
         }
