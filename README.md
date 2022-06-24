@@ -35,5 +35,6 @@ v0.2.0
 - [x] Login form works thanks to [pr](https://github.com/jefsev/Ress/pull/37) JarvicB
 - [ ] Frontend error handeling with React of wp_login_form instead of redirecting
 - [ ] Add Register form support
+- [ ] Create a class to handle al user auth like login form, error handling, password rest, register.
 - [ ] [Code splitting](https://webpack.js.org/guides/code-splitting/)
 - [ ] Testing, testing
