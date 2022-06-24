@@ -29,6 +29,17 @@ add_action('init', function () {
                     'user' => wp_get_current_user()
                 ];
             }
+        },
+        'login_form' => function () {
+            if (!is_user_logged_in()) {
+                ob_start();
+                    wp_login_form();
+                    $output = ob_get_contents(); 
+                ob_end_clean(); 
+                return [
+                    'user' => $output
+                ];
+            }
         }
     ]);
 });
