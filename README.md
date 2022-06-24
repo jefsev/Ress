@@ -28,7 +28,7 @@ v0.1.0
 - [x] Build a simple theme website to showcase theme and test theme performance
 - [x] Need a cool theme logo :D
 - [x] Create better webpack [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)html-webpack-plugin)
-- [x] Clean-up package.json
+- [ ] Fix autoprefixer, currently not working.
 - [ ] Add footer
 
 v0.2.0
