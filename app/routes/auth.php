@@ -34,9 +34,10 @@ add_action('init', function () {
             if (!is_user_logged_in()) {
                 $login_form = wp_login_form([
                     'echo' => false,
-                ])
+                ]);
+                
                 return [
-                    'login_form' => $login_form
+                    'login_form' => $login_form,
                 ];
             }
         }
