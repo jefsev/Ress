@@ -16,7 +16,7 @@ npm build<br />
 
 ## ToDo 
 
-v0.1.0
+v0.1.x
 - [x] Drink coffee
 - [x] add/fix laravel mix and scss (moved to webpack instead of mix)
 - [x] add wp navigation / add this to react Header component
@@ -28,13 +28,15 @@ v0.1.0
 - [x] Build a simple theme website to showcase theme and test theme performance
 - [x] Need a cool theme logo :D
 - [x] Create better webpack [mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)html-webpack-plugin)
-- [ ] Fix autoprefixer, currently not working.
+- [X] Fix autoprefixer, currently not working. (Note to self, read docs better and more often ;P) 
 - [ ] Add footer
 
-v0.2.0
+v0.2.x
 - [x] Login form works thanks to [pr](https://github.com/jefsev/Ress/pull/37) JarvicB
 - [ ] Frontend error handeling with React of wp_login_form instead of redirecting
 - [ ] Add Register form support
 - [ ] Create a class to handle al user auth like login form, error handling, password rest, register.
+- [ ] Add .env for dev and production
+- [ ] Add cssnano [cssnano](https://cssnano.co/docs/getting-started/)
 - [ ] [Code splitting](https://webpack.js.org/guides/code-splitting/)
 - [ ] Testing, testing

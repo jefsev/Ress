@@ -5,6 +5,9 @@
     "author": "Jeffrey Sevinga",
     "license": "MIT",
     "main": "app.js",
+    "browserslist": [
+        "last 3 versions"
+    ],
     "engines": {
         "node": ">=16.0.0"
     },
