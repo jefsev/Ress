@@ -6,6 +6,7 @@ use Ress\Inc\Collecter;
 // Register theme files from /app
 return Collecter::collectFiles([
     'setup',
+    'config',
     'helpers',
     'routes/head',
     'routes/auth',
