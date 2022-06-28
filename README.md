@@ -36,6 +36,8 @@ v0.2.x
 - [ ] Frontend error handeling with React of wp_login_form instead of redirecting to wp-login.php
 - [ ] Add frontend password rest form
 - [ ] Add frontend Register form support
+- [ ] Add contact form 7 support (update docs)
+- [ ] Add gravity forms support (update docs)
 - [ ] Add .env for dev and production
 - [ ] Add cssnano [cssnano](https://cssnano.co/docs/getting-started/)
 - [ ] [Code splitting](https://webpack.js.org/guides/code-splitting/)
