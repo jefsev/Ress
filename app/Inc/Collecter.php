@@ -1,18 +1,23 @@
 <?php
-
 namespace Ress\Inc;
+/**
+ * File collecter class
+ * Only collecting php files directy in app/
+ * If $files loop over files and add them using locate_template
+ * 
+ * @property array $files
+ * @method collectFiles calling locate_template on $file
+ */ 
 
 class Collecter {
-    public static function collectFiles( array $files = []) {
+    private $files;
+
+    public static function collectFiles($files) {
         
-        if (!$files) {
-            wp_die(
-                sprintf(__('Error locating for inclusion.', 'ress'), $file)
-            );
-        } else {
+        if (!empty($files)) { 
             foreach ($files as $key => $file) {
                 locate_template($file = "app/{$file}.php", true, true);
             }
-        }
+        } 
     }
 }
