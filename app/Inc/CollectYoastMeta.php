@@ -5,12 +5,15 @@ namespace Ress\Inc;
  * We need Yoast SEO meta data in our React theme
  * Use this class to collect Yoast SEO meta data with controllers to be shared with the React app using Inertia.
  * Build your own custom meta data with the Yoast SEO surface API.
- * @https://developer.yoast.com/customization/apis/surfaces-api
+ * @link https://developer.yoast.com/customization/apis/surfaces-api
  * 
+ * @property id post id we need to get Yoast data.
  * @return array return $yoast_seo to controller to render with Inertia.
 */
 
 class CollectYoastMeta {
+    private $id;
+
     public static function collectMeta( $id ) {
         // Setup array
         $yoast_seo = [];
